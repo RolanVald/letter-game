@@ -1,0 +1,29 @@
+.header{
+    background-color: #112B3C;
+    width: 100%;
+    position: fixed;
+    padding: 10px 0;
+    top: 0;
+    left: 0;
+
+}
+.header > span{
+    display: inline-block;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 15px;
+    margin-left: 50px;
+    
+}
+.headerItem{
+    margin-top: 20px;
+}
+
+.gameMode{
+    float: right;
+    top: 0p;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #fff;
+  }

@@ -1,0 +1,48 @@
+.letter{
+    padding: 15px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    background-color: #F66B0E;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.row :hover{
+    background-color: #f4433691;
+}
+
+.game{
+    margin-top: 100px;
+    align-items: center;
+    align-content: center;
+    display: grid;
+    place-items: center;
+}
+
+.apply{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-left: 25px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.apply:hover{
+    background-color: gray;
+}
+
+table{
+    margin-top: 25px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.playButton{
+    margin-left: 20px;
+    height: 40px;
+    border-radius: 13px;
+}

@@ -1,0 +1,23 @@
+<div class="header">
+    <span class="headerItem">
+        <h2> Find the difference </h2>
+    </span>
+    <span class="headerItem">
+        <h3>Level: {{ level }}</h3>
+    </span>
+    <span class="headerItem">
+        <h3 class="time">
+            Time {{ time.min }} : {{ time.seconds }}
+        </h3>
+    </span>
+    <span class="gameMode">
+        <mat-form-field appearance="fill">
+            <mat-label>Game mode</mat-label>
+            <mat-select (ngModelChange)="changeGameMode()" [(ngModel)]="gamemode" >
+                <mat-option *ngFor="let game of gamemodeList" [value]="game">
+                  {{ game | uppercase }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field> 
+    </span>
+</div>

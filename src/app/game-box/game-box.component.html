@@ -1,0 +1,30 @@
+<div class="game">
+    <div *ngIf="type == 'arcade'">
+        <div class="inputs">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Height</mat-label>
+                <input matInput type="text" placeholder="height" [(ngModel)]="h" >
+            </mat-form-field>
+            X
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Width</mat-label>
+                
+                <input matInput type="text" placeholder="width" [(ngModel)]="w" >
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" (click)="reset()" class="playButton">Play!!</button>
+        </div>
+    </div>
+    <div class="tableContainer">
+        <table>
+            <tr class="row" *ngFor="let row of gameArray;  let even = even; let odd = odd"
+                [ngClass]="{ odd: odd, even: even }">
+                <td  class="letter" *ngFor="let field of row" (click)="checkSuccess( field )">
+                    <span >
+                        {{ field }}
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
